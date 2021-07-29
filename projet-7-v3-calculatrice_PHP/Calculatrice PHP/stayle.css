@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: montserrat;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./jGlzr.png);
+}
+.center {
+  width: 365px;
+  background: linear-gradient(#25393d, #418fa0);
+  border-radius: 20px;
+}
+input {
+  height: 60px;
+  width: 300px;
+  margin-top: 40px;
+  border-radius: 1px;
+  border: 1px solid #e1e7ea;
+  color: black;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 20px;
+  background: linear-gradient(#9cebfc, #6ae1fb);
+}
+
+button {
+  width: 58px;
+  height: 55px;
+  margin: 5px;
+  font-size: 22px;
+  line-height: 55px;
+  border-radius: 3px;
+  border: 1px solid #d9d9d9;
+  background: linear-gradient(#d9d9d9, #bfbfbf);
+}
+button:hover {
+  transition: 0.5s;
+  background: linear-gradient(#e9c6c6, #7a2d2d);
+}
+button#cler {
+  background: #ff1a1a;
+  border: 1px solid #cc0000;
+  color: white;
+}
+button#equal {
+  width: 275px;
+  margin: 10px 0 10px 0;
+  font-size: 30px;
+  color: white;
+  background: #ff3d00;
+  border: 1px solid #b32a00;
+}
+@media only screen and (max-weidth: 768px;);
