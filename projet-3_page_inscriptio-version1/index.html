@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Sign Up Form</title>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.css'>
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="impression.css" media="print">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <script>
+    function myFunction() {
+      var text1 = document.getElementById("input1").value;
+      var text2 = document.getElementById("input2").value;
+      var text3 = document.getElementById("input3").value;
+      var text4 = document.getElementById("input4").value;
+
+
+      document.getElementById("result").innerHTML += "<div id='out1'> <b>Prenom</b>: 	&nbsp	" + text1 + "<br>	<b>Nom</b>: 	&nbsp" + text2 + " <br> <b>Telephone</b>: 	&nbsp	" + text3 + " <br><b>Email</b>: 	&nbsp; " + text4 + "	</div> <br><hr>";
+
+      document.getElementById("result1").innerHTML = "<a href='javascript:window.print()'><img src='https://i1.wp.com/css-tricks.com/wp-content/uploads/2007/11/click-here-to-print.jpg'  id='but' /></a>";
+    }
+  </script>
+  <div class="container">
+    <div class="row">
+
+      <div class="signupSection">
+
+        <div class=" h2 mb-4">
+
+          <h2>Sign Up</h2>
+        </div>
+        <ul class="noBullet">
+          <li>
+            <div class="li col-mb-4">
+              <label for="username"></label>
+              <input type="text" class="inputFields" id="input1" placeholder="Prenom" required />
+            </div>
+          </li>
+          <li>
+            <div class="li col-mb-4">
+              <label for="password"></label>
+              <input type="text" class="inputFields" id="input2" placeholder="Nom" required />
+            </div>
+          </li>
+          <li>
+            <div class="li col-mb-4">
+              <label for="password"></label>
+              <input type="text" class="inputFields" id="input3" placeholder="TEL" required />
+            </div>
+          </li>
+          <li>
+
+            <div class="li col-mb-4">
+              <label for="password"></label>
+              <input type="text" class="inputFields" id="input4" placeholder="EMAIL" required />
+            </div>
+          </li>
+
+          <li id="center-btn">
+            <div class="li col-mb-4">
+              <input onclick="myFunction()" type="button" id="join-btn" value="Submit">
+            </div>
+          </li>
+        </ul>
+
+      </div>
+      <div class="info">
+
+        <div class="li col-mb-4">
+          <p class="pp">Your Informations</p>
+          <p id="result"></p>
+        </div>
+        <div class="li col-mb-4">
+          <p id="result1"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
